@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 56px;
+}
+
+.header-superior{
+    display: flex;
+}
+
+#navbarDropdown{
+    text-decoration: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+.header-inferior{
+    background-color: green;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: green;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color:green;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color:blanchedalmond;
+}
+
+
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: space-between; /* Opcional, para distribuir mejor los elementos */
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 10px); /* Cada elemento ocupa un tercio del ancho con margen */
+    margin: 5px; /* Ajusta para evitar desbordamientos */
+}
