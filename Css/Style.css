@@ -1,22 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-    margin-top: 56px;
+    margin-top: 0;
 }
 
-.header-superior{
+
+.header-superior {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: white;
+    margin-top: 0;
 }
 
-#navbarDropdown{
-    text-decoration: none;
+.logo{
+    width: 50%;
 }
 
-ul{
-    text-decoration: none;
+.logo img {
+    height: 100px;
+    width: 80%;
 }
 
-.header-inferior{
-    background-color: green;
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .form-control {
+    margin-right: 10px;
+}
+
+.last-update {
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+header .header-inferior {
+    background-color: green !important;
+    color: white;
+}
+
+.dropdown-toggle{
+    color: white;
+    font-size: 14px;
 }
 
 .navbar-brand {
@@ -24,11 +58,22 @@ ul{
     font-weight: bold;
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: green;
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 24px;
+}
 .card {
     transition: transform 0.3s;
 }
@@ -46,15 +91,79 @@ h2 {
     background-color:blanchedalmond;
 }
 
-
-
 .tarjetas {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
-    justify-content: space-between; /* Opcional, para distribuir mejor los elementos */
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
 
 .card {
-    flex: 1 1 calc(33.33% - 10px); /* Cada elemento ocupa un tercio del ancho con margen */
-    margin: 5px; /* Ajusta para evitar desbordamientos */
+    flex: 1 1 calc(33.33% - 10px); 
+    margin: 5px; 
+}
+
+
+.nav-item {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.nav-item .btn {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item .btn-primary {
+    background-color: #2c3e50;
+    border-color: #34495e;
+    transition: all 0.3s ease;
+}
+
+.nav-item .btn-primary:hover {
+    background-color: #34495e;
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.logo-u{
+    height: 100px;
+}
+
+.btn-primary{
+    background-color: green !important;
+}
+
+.container-fluid{
+    background-color: white;
+}
+
+
+@media (max-width: 992px) {
+    .nav-item {
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .nav-item .btn {
+        max-width: 100%;
+    }
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.dropdown-item {
+    color: #2c3e50;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #34495e;
 }
