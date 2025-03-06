@@ -3,7 +3,6 @@ body {
     margin-top: 0;
 }
 
-
 .header-superior {
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,6 @@ body {
     height: 100px;
     width: 80%;
 }
-
 
 .search-bar {
     display: flex;
@@ -102,7 +100,6 @@ header .header-inferior {
     margin: 5px; 
 }
 
-
 .nav-item {
     margin: 0 10px;
     text-align: center;
@@ -142,13 +139,58 @@ header .header-inferior {
     background-color: white;
 }
 
+.texto-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-noticia{
+    width: 160px;
+    height: 100;
+    border-radius: 50%;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #008000; / Color verde */
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px 0 0 5px;
+}
+
+.sidebar-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.sidebar-icon:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
+
+.imagen-panel{
+    height: 80%;
+    width: 80%;
+    border-radius: 10%;
+}
 
 @media (max-width: 992px) {
     .nav-item {
         margin: 10px 0;
         width: 100%;
     }
-    
+
     .nav-item .btn {
         max-width: 100%;
     }
@@ -166,4 +208,13 @@ header .header-inferior {
 .dropdown-item:hover {
     background-color: #e9ecef;
     color: #34495e;
+}
+.Aleados {
+    height: 100px;
+    width: 100%;
+}
+
+.Aleados img {
+    height: 100px;
+    width: 100%;
 }
